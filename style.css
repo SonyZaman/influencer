@@ -160,9 +160,13 @@ body{
     font-family: 'Island Moments', cursive;
 }
 
+.social-media a{
+    color: seashell;
+}
 
 
 
+/* mobile */
 
 
 @media only screen and (max-width:688px){
@@ -176,23 +180,41 @@ body{
 
         
         }
-        #list-products, #journey{
+        #list-products, #journey, .flexible-container{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
     }
+
+
+    .link-button{
+        text-decoration: none;
+        background-color: salmon;
+        color: seashell;
+        padding: 5px 20px;
+        border-radius: 10px;
+         
+        
+    
+    }
+    .creativity{
+        width: 100%;
+        padding: 2%;
+    
+    }
+    .creativity img{
+        width:100%;
+        
+    }
+
+
+    }
+
+
     
 
 
-    }
 
-
-    .social-media a{
-        color: seashell;
-    }
-
-
-
-
+     /* tablet */
 
     @media only screen and (min-width: 688px) and (max-width:992px){
         #list-products{
