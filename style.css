@@ -101,6 +101,15 @@ body{
    color:#AEAEAE;
 }
 
+.more{
+
+justify-content: right;
+    margin-top: 20px;
+}
+
+.promotion{
+    margin-top: 150px;
+}
 
 #new{
     text-align: center;
