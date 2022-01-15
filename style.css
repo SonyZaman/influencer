@@ -1,0 +1,206 @@
+/* for whole body */
+
+body{
+    font-family: 'Roboto', sans-serif; 
+    padding: 20px;
+    margin: 20px;
+}
+
+#begins{
+    padding-bottom: 40px;
+}
+#start{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+#journey{
+    display: flex;
+    width:50%;
+}
+
+#journey img{
+    
+    height: 220px;
+    width: 217px;
+}
+
+#journey p{
+    font-size: 30px;
+}
+
+#journey article{
+    padding-bottom: 20px;
+}
+
+
+.link-button{
+    text-decoration: none;
+    background-color: salmon;
+    color: seashell;
+    padding: 10px 40px;
+    border-radius: 20px;
+     
+    
+
+}
+ 
+
+/* hover part */
+
+.camera:hover{
+    transform:scale(1.2);
+    transition: transform 1s ;
+}
+
+
+
+#products{
+    text-align: center;
+    font-size: 30px;
+}
+
+#list-products{
+    padding-top:90px;
+}
+
+
+#list-products{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.sell{
+    box-shadow:10px 10px 40px grey;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.sell-info{
+    
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.sell .sell-banner img{
+
+   width: 224px;
+   height: 104px;
+}
+
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+   color:#FFC014;
+}
+
+
+.fa-star.empty{
+   color:#AEAEAE;
+}
+
+
+#new{
+    text-align: center;
+}
+
+.creativity{
+    width: 50%;
+    padding: 2%;
+
+}
+.creativity img{
+    width:50%;
+    
+}
+
+.tech{
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 10px 10px 40px white;
+    border: 10px;
+    background-color:whitesmoke;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.world{
+    color: salmon;
+    font-weight: 1000;
+    font-size: xx-large;
+    font-family: 'Fjalla One', sans-serif;
+    font-stretch: extra-condensed;
+}
+
+
+
+.title{
+    
+    font-weight: 1000;
+    font-size: xx-large;
+    font-family: 'Fjalla One', sans-serif;
+    font-stretch: extra-condensed;
+}
+
+
+.flexible-container{
+    display: flex;
+
+}
+
+
+
+.end{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Island Moments', cursive;
+}
+
+
+
+
+
+
+@media only screen and (max-width:688px){
+
+    .sell{
+        width: 100%;
+    }
+
+      #list-products, #journey{
+        flex-direction: column;
+
+        
+        }
+        #list-products, #journey{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+    }
+    
+
+
+    }
+
+
+    .social-media a{
+        color: seashell;
+    }
+
+
+
+
+
+    @media only screen and (min-width: 688px) and (max-width:992px){
+        #list-products{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .sell{
+            width:100% ;
+        }
+    }
