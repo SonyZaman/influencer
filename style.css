@@ -1,253 +1,385 @@
-/* for whole body */
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-body{
-    font-family: 'Roboto', sans-serif; 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+nav {
+    background-color: #fff;
     padding: 20px;
-    margin: 20px;
 }
 
-#begins{
-    padding-bottom: 40px;
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  /* Ensures full-width layout */
 }
-#start{
-    padding-bottom: 50px;
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff4081;
+}
+
+/* Make the "Influencer Products" text more bold */
+.nav-container .company-logo {
+    font-weight: bolder; /* Makes the "Influencer Products" text bolder */
+    font-size: 1.5em; /* Optional: You can adjust the size of the text if needed */
+    color: #333;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #ff4081;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e0306f; /* Darker pink */
+    transform: scale(1.05); /* Hover effect for the button */
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for the camera image */
+.hero-image img:hover {
+    transform: scale(1.1); /* Hover effect for the camera image */
+}
+
+
+/* logo */
+.logo {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
     margin-bottom: 50px;
 }
-#journey{
+
+.logo .brands {
     display: flex;
-    width:50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#journey img{
-    
-    height: 220px;
-    width: 217px;
+.brand-row {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 10px 0;
+    width: 100%; /* Adjusts to full width of the footer */
+    max-width: 1200px; /* Optional: Set a max-width to prevent logos from stretching too much */
 }
 
-#journey p{
+.logo .brands img {
+    width: 100px;
+    height: auto;
+}
+
+/* Products Section */
+#products {
+    text-align: center;
     font-size: 30px;
 }
 
-#journey article{
-    padding-bottom: 20px;
+#list-products {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
 }
 
+.sell {
+    box-shadow: 10px 10px 40px grey;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-.link-button{
+.sell:hover {
+    transform: translateY(-10px); /* Hover effect for product lift */
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.2); /* Hover effect for shadow */
+}
+
+.sell-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sell .sell-banner img {
+    width: 224px;
+    height: 104px;
+    transition: transform 0.3s ease;
+}
+
+.sell .sell-banner img:hover {
+    transform: scale(1.1); /* Hover effect for product image */
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+}
+
+/* "See More" Button */
+.see-more {
+  font-size: 1em;
+  color: #ff4081;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 80px;
+  text-decoration: none;
+  margin-right: 40px;
+  
+}
+.more {
+  
+  margin-top: 0px;
+  margin-bottom: 40px;
+  
+  text-align: right; /* Aligns the text to the right */
+
+  
+}
+
+.see-more:hover {
+  text-decoration: underline;
+}
+
+.link-button {
     text-decoration: none;
     background-color: salmon;
     color: seashell;
-    padding: 10px 40px;
-    border-radius: 20px;
-     
-    
-
-}
- 
-
-/* hover part */
-
-.camera:hover{
-    transform:scale(1.2);
-    transition: transform 1s ;
-}
-
-
-
-#products{
-    text-align: center;
-    font-size: 30px;
-}
-
-#list-products{
-    padding-top:90px;
-}
-
-
-#list-products{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 24px;
-}
-
-.sell{
-    box-shadow:10px 10px 40px grey;
-    padding: 20px;
-    margin: 20px;
+    padding: 5px 20px;
     border-radius: 10px;
-}
-.sell-info{
-    
-    align-items: center;
-    justify-content: space-between;
-    
-
-}
-.sell .sell-banner img{
-
-   width: 224px;
-   height: 104px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.fa-star{
-    font-size: 12px;
-}
-.fa-star.filled{
-   color:#FFC014;
+.link-button:hover {
+    background-color: #e0306f; /* Hover effect for "See More" button */
+    transform: scale(1.05); /* Hover effect for scale */
 }
 
-
-.fa-star.empty{
-   color:#AEAEAE;
-}
-
-.more{
-
-justify-content: right;
-    margin-top: 20px;
-}
-
-.promotion{
-    margin-top: 150px;
-}
-
-#new{
+/* Section Styles */
+.promotion {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
     text-align: center;
-}
-
-.creativity{
-    width: 50%;
-    padding: 2%;
-
-}
-.creativity img{
-    width:50%;
     
 }
 
-.tech{
-    width: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
-    box-shadow: 10px 10px 40px white;
-    border: 10px;
-    background-color:whitesmoke;
-    padding: 2%;
-    border-radius: 10px;
+#new {
+    font-size: 2.5em;
+    color: #333;
 }
 
-.world{
-    color: salmon;
-    font-weight: 1000;
-    font-size: xx-large;
-    font-family: 'Fjalla One', sans-serif;
-    font-stretch: extra-condensed;
+.title {
+    color: #ff4081;
 }
 
-
-
-.title{
-    
-    font-weight: 1000;
-    font-size: xx-large;
-    font-family: 'Fjalla One', sans-serif;
-    font-stretch: extra-condensed;
+.world {
+    color: #2c3e50;
 }
 
-
-.flexible-container{
+.flexible-container {
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
 }
 
+.creativity {
+    max-width: 500px;
+    text-align: left;
+}
 
+.creativity img {
+    width: 100%;
+    height: auto;
+}
 
-.end{
+.tech {
+    max-width: 600px;
+}
+
+.tech h1 {
+    font-size: 2.2em;
+    color: #333;
+}
+
+.second {
+    color: #ff4081;
+}
+
+.tech p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 20px 0;
+}
+
+.link-button {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #e02f71;
+}
+
+/* Footer Styles */
+.end {
+    background-color: #2c3e50;
+    color: #fff;
     text-align: center;
-    background-color: black;
-    color: white;
-    font-family: 'Island Moments', cursive;
+    padding: 30px 20px;
+    margin-top: 50px;
 }
 
-.social-media a{
-    color: seashell;
+.end h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.end p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.social-media a {
+    margin: 0 15px;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #ff4081;
 }
 
 
-
-/* mobile */
-
-
-@media only screen and (max-width:688px){
-
-    .sell{
+/* Mobile View */
+@media only screen and (max-width: 688px) {
+    .sell {
         width: 100%;
         padding: 5px;
         margin: 15px;
     }
 
-      #list-products, #journey{
+    #list-products, #journey {
         flex-direction: column;
-
-        
-        }
-        #list-products, #journey, .flexible-container{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
+        display: block; /* Fixes the column layout on mobile */
     }
 
-
-    .link-button{
+    .link-button {
         text-decoration: none;
         background-color: salmon;
         color: seashell;
         padding: 5px 20px;
         border-radius: 10px;
-         
-        
-    
     }
-    .creativity{
+
+    .creativity {
         width: 100%;
         padding: 2%;
-    
     }
-    .creativity img{
-        width:100%;
-        
+
+    .creativity img {
+        width: 100%;
     }
-    body{
-        font-family: 'Roboto', sans-serif; 
-        padding: o;
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        padding: 0;
         margin: 0;
     }
-    
+}
 
-
+/* Tablet View */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    #list-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-
-    
-
-
-
-     /* tablet */
-
-    @media only screen and (min-width: 688px) and (max-width:992px){
-        #list-products{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
-        
-        .sell{
-            width: 100%;
-            padding: 5px;
-            margin: 15px;
-        }
-        body{
-            font-family: 'Roboto', sans-serif; 
-            padding: 0;
-            margin: 0;
-        }
-        
+    .sell {
+        width: 100%;
+        padding: 5px;
+        margin: 15px;
     }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        padding: 0;
+        margin: 0;
+    }
+}
